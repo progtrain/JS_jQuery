@@ -1,0 +1,5 @@
+Exercice 1:
+
+- Créer un input de type text avec un attribut value="0" et un bouton.
+
+- Faire un script qui permet d'augmenter le compteur de click quand on clique sur le bouton.

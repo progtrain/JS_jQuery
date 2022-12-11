@@ -1,0 +1,10 @@
+Exercice 6:
+
+- Reprenez le code de l'exercice 4.
+Remplacer les 3 boutons par des div
+
+- Faites un script qui fera la même chose que dans l'exercices 4 sauf qu'au lieu de cliquer pour changer les couleurs
+il faudra survoler les divs pour pour que la couleur correspondante s'applique sur le texte.
+
+Exemple: Si vous survolez la div bleu, alors le texte deviendra bleu.
+

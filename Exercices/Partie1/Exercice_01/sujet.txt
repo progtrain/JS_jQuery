@@ -1,0 +1,15 @@
+Exercice 1:
+
+- Créer une page index.html, intégrer le script de JQuery à la page.
+
+- Faire une page html classique (DOCTYPE, head, body, etc...)
+
+- Créer un paragraphe (balise p) et lui donner un id.
+
+- A l'aide de JQuery, trouvez le moyen de cacher le texte du paragraphe.
+
+Une fois que la page a été lancée dans un navigateur, la page html ne doit rien afficher.
+
+
+
+Indice: Utiliser la fonction hide() de JQuery

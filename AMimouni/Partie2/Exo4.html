@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 4</title>
+
+    <script src="../../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+    
+    <p>Texte Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ut.</p>
+
+
+    <a id="button1">Rouge</a>
+    <br>
+    <a id="button2">Blue</a>
+    <br>
+    <a id="button3">Vert</a>
+    
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("p").css("color", "red")
+            });
+            $("#button2").click(function () {
+                $("p").css("color", "blue")
+            });
+            $("#button3").click(function () {
+                $("p").css("color", "green")
+            });
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

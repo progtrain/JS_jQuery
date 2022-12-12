@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 4</title>
+
+    <script src="../../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <center>
+    <form action="submit" style="border: black solid 4px ">
+        <input id="input1" type="text">
+        <input id="input2" type="text">
+
+    </form>
+</center>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#input1").click(function () {
+                $("form").css("border-color", "red")
+            });
+            $("#input2").click(function () {
+                $("form").css("border-color", "green")
+            });
+
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 3</title>
+
+    <script src="../../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+    
+    <p>Texte Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ut.</p>
+
+
+    <a id="button1">Afficher le texte</a>
+    <br>
+    <a id="button2">Faire disparaître le texte</a>
+    
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("p").show();
+            });
+            $("#button2").click(function () {
+                $("p").hide();
+            });
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

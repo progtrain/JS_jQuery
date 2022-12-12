@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>titre</title>
+</head>
+<body>
+	
+    Compteur  : <input type ="number" value ="0" id="cmpt" />
+    <input type ="button" value="+" id ="augmenter"/>
+    <input type ="button" value="-" id ="Diminuer"/>
+
+<script src="..\Exercices\Squelette\assets\js\jquery-3.6.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+    $("#augmenter").click(function () {
+        let compteur = $("#cmpt").attr("value");
+        $("#cmpt").attr("value", ++compteur);
+    })
+    $("#Diminuer").click(function () {
+        let compteur = $("#cmpt").attr("value");
+        $("#cmpt").attr("value", --compteur);
+    })
+})
+
+</script>
+</body>
+</html>

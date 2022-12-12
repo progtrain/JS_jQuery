@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <script src="assets/js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript"> 
+ 
+ $(document).ready(function(){
+ $("#button1").click(function(){
+    $("p").css("color","red");
+ });
+ $("#button2").click(function(){
+    $("p").css("color","blue");
+ });
+ $("#button3").click(function(){
+    $("p").css("color","green");
+ });
+});
+</script>
+<a id="button1" href="#"> rouge</a> <br>
+<a id="button2" href="#"> bleu</a> <br>
+<a id="button3" href="#"> vert</a> 
+<p> le texte</p>
+
+</body>
+</html>

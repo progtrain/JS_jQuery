@@ -4,24 +4,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript">
+         
+        function reduireimage()  
+        {    
+        document.getElementById('image').height=100;
+        }
+        </script>
 </head>
-<body>
-    <input id="compteur" type="number" value="0"/>
-    <button id="button1"> +1 </button>
-    <button id="button2"> -1 </button>
-   
-    <script src="assets/js/jquery-3.6.1.min.js" type="text/javascript"></script>
-  <script>
-  $(document).ready(function(){
-    $("button1").click(function(){
-         compteur=$("#compteur").attr("value");
-        $("#compteur").attr("value",++compteur);
-    });
-    $("button2").click(function() {
-        $("#compteur").val($("#compteur")).val(),--1)
-
-})
-
-</script>
-</body>
-</html>
+<p>
+    <img src="C:\Users\hamza\Desktop\KNVYKZBDTTOXNO37FEVDTD5DJU.jpg"  height="250" id="image" onclick="reduireimage()" />
+<img src="C:\Users\hamza\Desktop\chat-gouttiere-1-111031.jpg"  height="250" id="image"  onclick="reduireimage()" />

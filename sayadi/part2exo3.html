@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <p> texte </p>
+    <br>
+    <a id="afficher" href="#"> affichez le texte</a>
+    <br>
+    <a id="masquer" href="#"> masquer le texte</a>
+   
+    <script src="assets/js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript"> 
+ 
+  $(document).ready(function(){
+        $("#afficher").click(function() {
+            $("p").show();
+        });
+        $("#afficher").click(function() {
+            $("p").hide();
+        });
+});
+
+</script>
+</body>
+</html>

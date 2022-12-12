@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 7</title>
+
+    <script src="../../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <ul>
+        <li> element 1</li>
+        <li> element 2</li>
+        <li> element 3</li>
+        <li> element 4</li>
+    </ul>
+    <ol>
+        <li> element 1</li>
+        <li> element 2</li>
+        <li> element 3</li>
+        <li> element 4</li>
+    </ol>
+
+
+    <center>
+        <button>Click here </button>
+    </center>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("ul li:even").remove();
+                $("ol li:odd").remove();
+            });
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

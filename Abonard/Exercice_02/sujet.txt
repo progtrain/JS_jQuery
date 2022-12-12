@@ -1,0 +1,12 @@
+Exercice 2:
+
+- Vous pouvez reprendre le même code qu'au dernier exercice, sauf le JQuery.
+
+- Cette fois dans la balise p, rajoutez l'attribut hidden (qui rendra votre paragraphe invisible sans passer par du JS)
+
+- Maintenant vous devez à l'aide de JQuery rendre le texte visible.
+Le but est de désactiver l'attribut hiden.
+
+
+
+Indice: La fonction toggle() permet de faire apparaître un élément.

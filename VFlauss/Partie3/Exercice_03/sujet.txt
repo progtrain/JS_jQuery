@@ -1,0 +1,31 @@
+Exercice 3:
+
+
+Première partie:
+
+Le but de l'exercice est de faire un petit jeu on l'on doit deviner la valeur d'un nombre générer de façon aléatoire entre 1 et 100.
+
+- Faire un bouton de type number avec un attribut value="0" et un bouton permettant de vérifier si le nombre saisi est bon.
+
+- Quand on clique sur le bouton pour valider le nombre.
+Une alert doit s'ouvrir pour nous dire si notre nombre est trop grand ou trop petit.
+Si on a deviné le nombre, l'alert doit afficher en combien de coup on a gagné.
+
+function nb_aleatoire(min, max) { // En mettant 1 pour min et 100 pour max
+	var nb = min + (max - min + 1) * Math.random();
+	return Math.floor(nb);
+}
+
+Deuxième partie:
+
+Faites trois niveau différents à votre jeu.
+LVL 1 : 1 - 100
+LVL 2 : 1 - 1000
+LVL 3 : -100 - 100
+
+Bonus:
+Vous pouvez rajouter 3 niveaux de difficulté à chaque LVL de votre choix:
+exemple: 
+LVL 1 : Facile: moins de 15 coups / Moyen: moins de 10 coups / Difficile: moins de 5 coups 
+etc 
+

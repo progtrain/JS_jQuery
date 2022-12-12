@@ -1,0 +1,11 @@
+Exercice 5:
+
+- Créer un formulaire avec 2 inputs de types text avec un id (Peut importe le nom des inputs).
+	Rajouter un bouton.
+
+- Faire un script qui permet de changer la couleur de bordure des inputs en fonctions de si on est dedans ou pas.
+
+Exemple:
+	Quand on tape du texte dans le permier input la bordure doit-être verte et une fois qu'on passe sur le deuxième
+	input ou que l'on focus autre chose l'input doit devenir rouge.
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+	
+<p id="exo1">
+	coucou1
+</p>
+<p id="exo2">
+	coucou2
+</p>
+<p id="exo3">
+	coucou3
+</p>
+<ul>
+<li>Java</li>
+<li>css</li>
+<li>python</li>
+</ul>
+
+<div id="exo5-1">5-1</div>
+<div id="exo5-2">5-2</div>
+<div id="exo5-3">5-3</div>
+
+
+<ul id = exo6u>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+</ul>
+
+<ol id = exo6o>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+</ol>
+
+<p id="fin1">fin1</p>
+<p id="fin2">fin2</p>
+<p id="fin3">fin3</p>
+
+<!-- Code html -->
+
+<script src="assets\js\jquery-3.6.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#exo1").hide();
+		$("#exo2").show();
+		$("#exo3").css("font-family", "Arial");
+		$("ul").css("color", "blue")
+		$("#exo5-2").empty();
+		for(i=0;i<4;i++){
+			if(i%2==0){
+			$('#exo6u li').eq(i).hide();
+			$('#exo6o li').eq(i).remove();
+			}
+		}
+		$("ul").eq(1).css("color","black");
+		$("#fin1").css("border","5px dotted green ")
+		$("#fin3").css("border","5px dotted green ")
+
+	})
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+	
+	<button id="exo1">bouton1</button>
+
+<div>
+	<img src="win3.png" id="exo2">
+</div>
+
+<a id="exo3-1">exo3-1</a>
+<a id="exo3-2">exo3-2</a>
+<br>
+<div id="exo4-1">rouge</div>
+<div id="exo4-2">vert</div>
+<div id="exo4-3">bleu</div>
+
+<p>je suis le texte de l'exo 3</p>
+
+
+<form>
+	<input type="text" id="exo5-1">
+	<input type="text" id="exo5-2">
+  </form>
+
+
+<script src="assets\js\jquery-3.6.1.min.js"></script>
+<script>
+	
+	$("#exo1").click(function(){
+		alert("Tu as cliqué !");
+	})
+	$("#exo2").dblclick(function(){
+
+		$("#exo2").css("width","100%");
+		$("#exo2").css("height","100%");
+
+	})
+	$("#exo3-1").click(function(){
+		$("p").show();
+	})
+	$("#exo3-2").click(function(){
+		$("p").hide();
+	})
+	$("#exo4-1").click(function(){
+		$("p").css("color","red");
+	})
+	$("#exo4-2").click(function(){
+		$("p").css("color","green");
+	})
+	$("#exo4-3").click(function(){
+		$("p").css("color","blue");
+	})
+	$("#exo5-1").mouseenter(function(){
+		$("#exo5-1").css("border","2px solid red");
+	})
+
+	$("#exo5-1").mouseleave(function(){
+		$("#exo5-1").css("border","2px solid black");
+	})
+
+	$("#exo5-2").mouseenter(function(){
+		$("#exo5-2").css("border","2px solid green");
+	})
+
+	$("#exo5-2").mouseleave(function(){
+		$("#exo5-2").css("border","2px solid black");
+	})
+	$("#exo4-1").mouseenter(function(){
+		$("p").css("color","red");
+	})
+	$("#exo4-2").mouseenter(function(){
+		$("p").css("color","green");
+	})
+	$("#exo4-3").mouseenter(function(){
+		$("p").css("color","blue");
+	})
+
+	
+
+
+</script>
+</body>
+</html>

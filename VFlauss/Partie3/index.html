@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+	
+	<input type ="text" value="0" id="exo1t"/>
+	<button id="exo1b">Je suis le premier bouton</button>
+
+	<br>
+	<input type ="counter" value="0" id="exo2c"/>
+
+<script src="assets\js\jquery-3.6.1.min.js"></script>
+<script>
+	count=0;
+	$("#exo1b").click(function(){
+		count++;
+    	$("#exo1t").val(count);
+	})
+
+
+
+</script>
+</body>
+</html>

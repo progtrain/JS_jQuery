@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 1</title>
+
+    <script src="../../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <input type="text" value="0">
+        <button id="bouton1">Click here to Increment</button>
+    </center>
+
+    <script>
+        let counter=0;
+
+        $(document).ready(function () {
+            $("#bouton1").click(function () {
+                counter++;
+                $("input").val(counter);
+            });
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

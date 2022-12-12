@@ -1,0 +1,6 @@
+Exercice 2:
+
+- Créer un input de type number avec un attribut value="0" et 2 boutons. Un pour incrémenter le compteur et l'autre pour le décrementer.
+Les 2 boutons doivent avoir un id.
+
+- Faire un script qui permet de faire fonctionner les boutons.

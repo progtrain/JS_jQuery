@@ -1,0 +1,6 @@
+Exercice 1:
+
+- Créer un bouton avec un id.
+
+- Faire un script JQuery qui permet d'ouvrir une alert quand on clique sur le bouton.
+Mettez le message de votre choix dans l'alert

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    
+    <p >Liste 1</p>
+    <ul class="liste">
+        <li>Maths</li>
+        <li>Physiques</li>
+        <li>Chimie</li>
+        <li>Biologie</li>
+    </ul>
+
+    <p>Liste 2</p>
+
+    <ol class="liste">
+        <li>Algèbre</li>
+        <li>Analyse</li>
+        <li>Géometrie</li>
+        <li>Analyse combinatoire</li>
+    </ol>
+
+    <script src="assets/js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $(".liste li").each(function(i){
+            if(i%2 ==1){
+                $(this).remove();
+            }
+           })  
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+Exercice 4:
+
+- Créer dans une page html une liste (balise ul) et dedans mettez la liste des langages web que vous connaissez (via la balise li).
+
+- Le but est de changer la couleur de tout les éléments de la liste avec JQuery.
+
+- Il n'y a pas besoins de classes ou d'id.
+

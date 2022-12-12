@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 6</title>
+
+    <script src="../../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+    
+    <p>Texte Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ut.</p>
+
+
+    <div id="div1">Rouge</div>
+    <br>
+    <div id="div2">Bleu</div>
+    <br>
+    <div id="div3">Vert</div>
+    
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#div1").hover(function () {
+                $("p").css("color", "red")
+            });
+            $("#div2").hover(function () {
+                $("p").css("color", "blue")
+            });
+            $("#div3").hover(function () {
+                $("p").css("color", "green")
+            });
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

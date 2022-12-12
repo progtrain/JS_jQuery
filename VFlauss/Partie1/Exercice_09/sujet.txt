@@ -1,0 +1,7 @@
+Exercice 9:
+
+- Il faut créer 3 paragraphes (balise p) avec chacun un id.
+
+- Avec JQuery vous devez ajoutez une bordure autour du premier et dernier texte.
+
+- La bordure doit-être de 5px, verte et en pointillé.

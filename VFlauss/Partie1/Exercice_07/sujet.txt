@@ -1,0 +1,6 @@
+Exercice 7:
+
+- Reprenez l'exercice précédent.
+
+- Cette fois il ne faut pas cacher les éléments mais les supprimés (toujours avec JQuery).
+Une fois dans le navigateur, si on fait f12 les éléments supprimés ne doivent pas apparaître dans le code html.

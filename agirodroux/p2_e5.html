@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="" id="1">
+      <input type="text" name="" id="2">
+    </form>
+      
+    <script src="../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+    <script>
+      // Code javascript JQuery
+      $(document).ready(function () {
+        $("#1").focus(function () {
+          $("#2").css("border-color","green");
+          $("#1").css("border-color","white");
+        });
+        $("#2").focus(function () {
+          $("#1").css("border-color","green");
+          $("#2").css("border-color","white");
+        });
+
+      });
+    </script>
+  </body>
+</html>

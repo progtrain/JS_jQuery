@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+	
+	<input type ="text" value="0" id="exo1t"/>
+	<button id="exo1b">Je suis le premier bouton</button>
+
+	<br>
+	<input type ="counter" value="0" id="exo2c"/>
+
+	<button id="exo2b-1">Je suis le deuxième bouton +</button>
+	<button id="exo2b-2">Je suis le deuxième bouton -</button>
+
+	<br>
+	<input type ="counter" value="0" id="exo3c"/>
+	<button id="exo3b">Valider</button>
+
+	<br>
+
+	<button id="exo3b-1">Générer niveau 1(1-100)</button>
+	<button id="exo3b-2">Générer niveau 2(1-1000)</button>
+	<button id="exo3b-3">Générer niveau 3(1-10000)</button>
+	<select name="diff" id="difficulte">
+		<option value="-1000">Choisissez votre difficulté</option>
+		<option value="1">20 coups</option>
+		<option value="2">15 coups</option>
+		<option value="3">10 coups</option>
+		<option value="4">5 coups</option>
+
+	</select>
+
+	<p id="aff">
+		Texte d'affichage
+	</p>
+	<br>
+	<p id="affc">
+		Texte d'affichage
+	</p>
+
+<script src="assets\js\jquery-3.6.1.min.js"></script>
+<script>
+
+function generate(lvl){
+	guess = Math.floor(Math.random() * 100*(Math.pow(10,lvl)))+1;
+
+}
+
+function checkk(){
+		check = $("#exo3c").val();
+		if(check>guess){
+			$("#aff").text("trop grand !");
+		}
+		if(check<guess){
+			$("#aff").text("trop petit !");
+		}
+		if(check==guess){
+			$("#aff").text("gagné !");
+		}
+		count3++;
+		$("#affc").text("nombre d'essais : " + count3);
+		
+		if(count3==26-(5*diff)){
+			alert("tu as perdu !");
+		}
+
+	}
+	count1=0;
+	count2=0;
+	
+	
+	
+	$("#exo1b").click(function(){
+		count1++;
+    	$("#exo1t").val(count1);
+	})
+	$("#exo2b-1").click(function(){
+		count2++;
+    	$("#exo2c").val(count2);
+	})
+	$("#exo2b-2").click(function(){
+		count2--;
+    	$("#exo2c").val(count2);
+	})
+	$("#exo3b").click(function(){
+		checkk();
+	})
+	$("#exo3b-1").click(function(){
+		generate(1);
+		$("#aff").text("Un nombre a été généré, bonne chance !");
+		count3=0;
+		diff = $("#difficulte").val();
+	})
+	$("#exo3b-2").click(function(){
+		generate(2);
+		$("#aff").text("Un nombre a été généré, bonne chance !");
+		count3=0;
+		diff = $("#difficulte").val();
+	})
+	$("#exo3b-3").click(function(){
+		generate(3);
+		$("#aff").text("Un nombre a été généré, bonne chance !");
+		count3=0;
+		diff = $("#difficulte").val();
+	})
+
+
+
+$("#exo3c").keypress(function (event) {
+	var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(keycode == '13'){
+    checkk();  
+  }
+});
+
+
+</script>
+</body>
+</html>

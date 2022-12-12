@@ -1,0 +1,15 @@
+Exercice 8:
+
+- Reprenez le code du dernier exercice en enlevant les classes ou les id des listes.
+
+
+- Le but est d'attribuer une couleur à tout les éléments de la deuxième liste sans affecter la première.
+
+La première liste doit rester noir mais la deuxième doit-être d'une autre couleur.
+
+
+Indice: Avec Jquery on peut utiliser l'héritage de balises.
+
+Par exemple:
+Si je souhaite sélectionner uniquement les balises p qui sont entourés de div,
+alors je peux faire $('div p') et cela sélectionnera uniquement les balises p que je veux.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+
+	<ul>
+		<li id="1">Pomme</li>
+		<li id="2">Fraise</li>
+		<li id="3">Raison</li>
+		<li id="4">Orange</li>
+	</ul>
+
+	<ol>
+		<li id="5">Tomate</li>
+		<li id="6">Salade</li>
+		<li id="7">Oignon</li>
+		<li id="8">Courgette</li>
+	</ol>
+
+
+<script src="../Exercices/Squelette/assets/js/jquery-3.6.1.min.js" type = "text/javascript"> </script>
+<script type = "text/javascript">
+
+$(document).ready(function(){
+        $("#2").remove();
+		$("#4").remove();
+		$("#6").remove();
+		$("#8").remove();
+    })
+
+</script>
+
+</body>
+</html>

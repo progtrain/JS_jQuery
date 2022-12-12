@@ -14,18 +14,24 @@
 
 $(document).ready(function () {
 
-    $("#input1, #input2").focusin(function() {
-        $(this).css("border-color", "green");
+    $("#d1").mouseover(function() {
+        $("p").css("color", "red");
     });
-    $("#input1, #input2").focusout(function() {
-        $(this).css("border-color", "green");
+    $("#d2").mouseover(function() {
+        $("p").css("color", "green");
+    });
+    $("#d3").mouseover(function() {
+        $("p").css("color", "yellow");
     });
 });
 
 </script>
 
-<input id="input1" type="text">
-<input id="input2" type="text">
+<div id="d1">RED</div>
+<div id="d2">GREEN</div>
+<div id="d3">YELLOW</div>
+
+<p>TEST</p>
 
 </body>
 </html>

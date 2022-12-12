@@ -14,18 +14,23 @@
 
 $(document).ready(function () {
 
-    $("#input1, #input2").focusin(function() {
-        $(this).css("border-color", "green");
-    });
-    $("#input1, #input2").focusout(function() {
-        $(this).css("border-color", "green");
-    });
+let i = 0;
+
+$("#btn1").click(function() {
+    i++;
+    $("input").val(i);
+});
+$("#btn2").click(function() {
+    i--;
+    $("input").val(i);
+});
+    
 });
 
 </script>
 
-<input id="input1" type="text">
-<input id="input2" type="text">
-
+<input type="text" value="0">
+<button id="btn1">Incrémente</button>
+<button id="btn2">Décrémente</button>
 </body>
 </html>

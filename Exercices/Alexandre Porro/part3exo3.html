@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+ 
+<script src="jquery-3.6.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function nb_aleatoire(min, max) {
+	var nb = min + (max - min + 1) * Math.random();
+	return Math.floor(nb);
+}
+
+$(document).ready(function () {
+$("#debut").click(function() {
+
+    let level = $("#level").val();
+    let min = level==1 ? 0: level==2? 0 : -100;
+    let max = level == 1? 100: level==2? 1000:100;
+
+    let max_coups = $("#niveau").val() == 1 ? 15 : ($("#niveau").val() == 2? 10: 5);
+
+    console.log($("#niveau").val());
+    console.log($("#level").val());
+    
+    jeu(min, max, max_coups);
+});
+
+function jeu(min, max, max_coups) {
+    $("#jeu").show();
+    let alea = nb_aleatoire(min, max);
+    let coups = 0;
+
+    $("#jeu button").click(function() {
+
+        coups++;
+        console.log(coups + " et max coups " + max_coups + " et max et min " + max + " " + min + " et alea " + alea);
+        
+        let input = $("#jeu input").val();
+        
+        if(input == alea) {
+            alert("bravo vous avez gagné ! c'est bien "+alea);
+            $("#jeu").hide();
+        } else {
+           
+            if(input < alea) {
+                alert("c'est plus !");
+            } else {
+                alert("c'est moins !");
+            }
+
+            if(coups == max_coups -1) {
+                alert("Vous avez perdu ! Il fallait trouver " + alea);
+                $("#jeu").hide();
+            }
+        }
+    });
+}
+
+});
+
+</script>
+
+<p> choix mode de jeu et difficulté</p>
+<p>Niveau</p>
+<input type="radio" id="niveau" value="1">15 coups<br>
+<input type="radio" id="niveau" value="2">10 coups<br>
+<input type="radio" id="niveau" value="3">5 coups<br>
+<br>
+<input type="radio" id="level" value="1">0-100<br>
+<input type="radio" id="level" value="2">0-1000<br>
+<input type="radio" id="level" value="3">-100 - 100<br>
+
+<button id="debut">démarrer</button> 
+
+<div id="jeu" hidden="true">
+
+<input type="text">
+<button>valider</button>
+
+</div>
+
+</body>
+</html>

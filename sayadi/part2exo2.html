@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <title>JQuery</title>
+</head>
+<body>
+    <input id="compteur" type="number" value="0"/>
+    <button id="button1"> +1 </button>
+    <button id="button2"> -1 </button>
+   
+  <script src="script.js"></script>
+  <script>
+  $(document).readdy(function(){
+    $("button1").click(function(){
+        int compteur=$("#compteur").attr("value");
+        $("#compteur").attr("value",++compteur);
+    });
+    $("button2").click(function(){
+        $("#compteur").val($("#compteur")).val(),--1)
+
+  })
+
+</script>
+</body>
+</html>

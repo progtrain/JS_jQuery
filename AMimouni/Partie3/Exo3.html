@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 3</title>
+
+    <script src="../../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <h1></h1>
+        <h2></h2>
+        <input type="number" value="0">
+        <button id="bouton1">Valider</button>
+
+    </center>
+
+    <script>
+
+
+
+function nb_aleatoire(min, max) { // En mettant 1 pour min et 100 pour max
+	var nb = min + (max - min + 1) * Math.random();
+	return Math.floor(nb);
+}
+
+function update() { // En mettant 1 pour min et 100 pour max
+    $("h2").text("NumberToGuess: " + numberToGuess);
+    console.log(numberToGuess);
+    $("h1").text("Level: " + level);
+    
+    counter=1;
+}
+
+let numberToGuess= nb_aleatoire(1, 100);
+        let counter=1;
+        let level=1;
+        console.log(numberToGuess);
+        $("h1").text("Level: " + level);
+        $("h2").text("NumberToGuess: " + numberToGuess);
+        $(document).ready(function () {
+            $("#bouton1").click(function () {
+                if ($("input").val()==numberToGuess){
+                    alert("Correct! you did: " + counter + " tries");
+                    level++;
+                    if (level==2){ numberToGuess= nb_aleatoire(1, 1000);
+                    update()
+                }
+                else if (level==3){ numberToGuess= nb_aleatoire(-100, 100);
+                    update()
+                }else if (level==4){
+                    alert("The End");
+                    $("input").hide();
+                    $("h2").hide();
+                    $("h1").hide();
+
+
+                }
+                    
+                    
+                } else if ($("input").val()<numberToGuess){
+                    alert("le nombre est Inferieur");
+                } else if ($("input").val()>numberToGuess){
+                    alert("le nombre est Superieur");
+                }
+
+                counter++;
+                
+            });
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

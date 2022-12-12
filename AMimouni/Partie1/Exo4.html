@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exerice 4</title>
+
+    <script src="../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <li>javascipt</li>
+        <li>sql</li>
+        <li>java</li>
+    </ul>
+
+    <p  id="paragraphe1">Mon Paragraphe</p>
+
+    <center>
+        <button>Click here to change font color</button>
+    </center>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("ul li").css("color", "red");
+            });
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>

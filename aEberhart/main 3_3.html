@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+
+	<h1> Nombre Aleatoire </h1>
+	
+    <input type = "number" value="0" id="nombre">
+
+	<button type = "number" value="0" id="test"> verification </button>
+
+<script src="../Exercices/Squelette/assets/js/jquery-3.6.1.min.js" type = "text/javascript"> </script>
+<script type = "text/javascript">
+
+	function nb_aleatoire(min, max) { // En mettant 1 pour min et 100 pour max
+	var nb = min + (max - min + 1) * Math.random();
+	return Math.floor(nb);
+	}
+
+	var count = 0;
+	$("#test").click(function(){
+		count++;
+	})
+
+
+	$("#test").click(function(){
+		if ($("#nombre").val()==nb_aleatoire(1,5)){
+			alert("Bonne reponse !!! vous avez reussi en :" + count + " essai");
+		}
+
+		else {
+			alert("Mauvaise reponse essayez encore (essai n°" + count+")");
+		}
+   	});
+
+</script>
+
+</body>
+</html>

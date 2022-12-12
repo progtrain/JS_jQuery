@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+  </head>
+  <body>
+    <p id="hi">Hello</p>
+    <a id="affiche" href="#">affiche</a>
+    <a id="disparait" href="#">disparait</a>
+    <script src="../Exercices/Squelette/assets/js/jquery-3.6.1.min.js"></script>
+
+    <script>
+      // Code javascript JQuery
+      $(document).ready(function () {
+        $("#affiche").click(function () {
+          $("p").show();
+        });
+        $("#disparait").click(function () {
+          $("p").hide();
+        });
+      });
+    </script>
+  </body>
+</html>

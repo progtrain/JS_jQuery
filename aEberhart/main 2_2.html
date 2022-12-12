@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+
+	<img id="image" src="https://www.voyageursdumonde.fr/voyage-sur-mesure/magazine-voyage/ShowPhoto/490/0" alt="Islande"/>
+
+
+<script src="../Exercices/Squelette/assets/js/jquery-3.6.1.min.js" type = "text/javascript"> </script>
+<script type = "text/javascript">
+
+	$("#image").dblclick(function(){
+		var image = document.getElementById("image")
+		image.style.width = '30%';
+		image.style.height = 'auto';
+	});
+
+</script>
+
+</body>
+</html>

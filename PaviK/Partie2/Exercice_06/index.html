@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+  </head>
+  <body>
+    <!-- Code html -->
+
+    <script src="..\..\..\Exercices\Squelette\assets\js\jquery-3.6.1.min.js"></script>
+    <script type="text/javascript"></script>
+
+    <p id="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      consectetur vel sunt quisquam assumenda a. Dolor odio labore quae, ex
+      officia necessitatibus debitis dolores illum asperiores commodi dicta
+      accusamus odit!
+    </p>
+
+    <div id="red" class="classic">Rouge</div>
+    <div id="blue" class="classic">Bleu</div>
+    <div id="green" class="classic">Vert</div>
+    <style>
+      .classic {
+        margin: 5px;
+        padding: 5px;
+        border: solid black 1px;
+      }
+    </style>
+    <script>
+      $("#red").hover(function () {
+        $("p").css("background-color", "red");
+      });
+      $("#blue").hover(function () {
+        $("p").css("background-color", "blue");
+      });
+      $("#green").hover(function () {
+        $("p").css("background-color", "green");
+      });
+    </script>
+  </body>
+</html>

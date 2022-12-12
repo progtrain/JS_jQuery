@@ -9,7 +9,8 @@
 <body>
 	
     Compteur de click : <input type ="number" value ="0" id="compteur" />
-    <input type ="button" value="Cliquez ici" id ="bouton"/>
+    <input type ="button" value="Incrémentez" id ="incrementer"/>
+    <input type ="button" value="Décrémentez" id ="decrementer"/>
 
 	<!-- Code html -->
 
@@ -18,9 +19,13 @@
 	// Code javascript JQuery
 
 $(document).ready(function () {
-    $("#bouton").click(function () {
+    $("#incrementer").click(function () {
         let compteur = $("#compteur").attr("value");
         $("#compteur").attr("value", ++compteur);
+    })
+    $("#decrementer").click(function () {
+        let compteur = $("#compteur").attr("value");
+        $("#compteur").attr("value", --compteur);
     })
 })
 

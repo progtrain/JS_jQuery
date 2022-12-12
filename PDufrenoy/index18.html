@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery</title>
+</head>
+<body>
+
+
+<input type = "number" id = "bouton1" value = "0" />
+<button type = "submit" id = "bouton2"> Valider </button>
+
+
+<script src="..\Exercices\Squelette\assets\js\jquery-3.6.1.min.js" type = "text/javascript"></script>
+
+<script>
+$(document).ready(function(){
+
+    let min = 1;
+    let max = 100;
+
+    
+
+    function nb_aleatoire(min, max) { 
+	    var nb = min + (max - min + 1) * Math.random();
+	    return Math.floor(nb);
+    }
+
+
+
+    $("#bouton2").click(function () { 
+    
+    nb_aleatoire(min, max)
+
+    let message = prompt('Le nombre à deviner est compris entre 1 et 100.');
+  
+
+while(message != nb_aleatoire(min, max)){
+
+
+    if (message > nb_aleatoire(min, max)) {
+        message = prompt("C'est moins");
+    } else if (message < nb_aleatoire(min, max)) {
+        message = prompt("C'est plus");
+    } else if (message === nb_aleatoire(min, max))
+        alert("Bravo");
+
+}
+ 
+
+    }) 
+})
+
+</script>
+</body>
+</html>

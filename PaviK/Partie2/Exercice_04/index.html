@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+  </head>
+  <body>
+    <!-- Code html -->
+
+    <script src="..\..\..\Exercices\Squelette\assets\js\jquery-3.6.1.min.js"></script>
+    <script type="text/javascript"></script>
+
+    <p id="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      consectetur vel sunt quisquam assumenda a. Dolor odio labore quae, ex
+      officia necessitatibus debitis dolores illum asperiores commodi dicta
+      accusamus odit!
+    </p>
+
+    <a id="red" href="#">Rouge</a>
+    <a id="blue" href="#">Bleu</a>
+    <a id="green" href="#">Vert</a>
+
+    <script>
+      $("#red").click(function () {
+        $("#text").css("background-color", "red");
+      });
+      $("#blue").click(function () {
+        $("#text").css("background-color", "blue");
+      });
+      $("#green").click(function () {
+        $("#text").css("background-color", "green");
+      });
+    </script>
+  </body>
+</html>

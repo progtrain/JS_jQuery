@@ -1,0 +1,6 @@
+Exercice 2:
+
+- Dans le code html, rajoutez l'image de votre choix et donner lui un id.
+
+- Maintenant faites un script permettant de rétrécir l'image quand on double clique dessus.
+

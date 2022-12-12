@@ -1,0 +1,6 @@
+Exercice 4:
+
+- Reprenez le même fichier html que l'exerice d'avant, rajoutez un 3ème bouton avec un id.
+
+- Cette fois faites un script qui permettra de changer la couleur du texte.
+Le premier bouton mettra le texte en rouge, le deuxième en bleu et le troisième en vert

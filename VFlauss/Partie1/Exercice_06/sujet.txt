@@ -1,0 +1,6 @@
+Exercice 6:
+
+- Créer 2 liste, une liste à puce (ul) et une liste numérotée (ol).
+Dans chacune des listes mettre 4 éléments (li).
+
+- Le but est de cacher un élément sur 2 dans les 2 listes.

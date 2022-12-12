@@ -1,0 +1,15 @@
+Exercice 3:
+
+- Créer une page html basique (vous pouvez reprendre le même fichier que pour les exercices d'avant).
+
+- Le but est d'avoir un paragraphe (balise p) avec un id.
+Grâce à cet id utilisez JQuery afin de rajouter du css au paragraphe.
+
+- Le css rajouter via JQuery doit changer la police du texte.
+
+Pour rappel, en css on utilise font-family: pour changer la police d'un élément.
+Exemple:
+	font-family: 'Arial';
+
+
+Indice: la fonction css() de JQuery permet d'ajouter du style à un élement html

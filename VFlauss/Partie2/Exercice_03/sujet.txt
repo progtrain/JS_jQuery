@@ -1,0 +1,9 @@
+Exercice 3:
+
+- Créer 2 boutons (avec la balise a) et un texte (balise p).
+Le premier bouton va permettre d'afficher le texte.
+Le deuxième bouton permet de faire disparaître ce texte.
+
+- Ces deux boutons auront un id.
+
+- Faites un script avec JQuery afin de faire fonctionner ces 2 boutons.

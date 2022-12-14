@@ -19,11 +19,17 @@
 <script>
 $(document).ready(function(){
 
-    $("#input1!").click(function(){
+    $("#input1, #input2").focusin(function(){
 
-        $("#input1").css("border", "2px solid green")
-
+        $(this).css("border", "5px solid green")
+    
     })
+
+    $("#input1, #input2").focusout(function(){
+
+        $(this).css("border", "5px solid red")
+
+})
 
 })
 </script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Partie 3 JQuery Exercice1</title>
+  <script src="assets\js\jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+  <input type="text" name="incrementation" value="0" />
+  <button name="button">Click</button>
+
+  <script>
+    $('button').click(function() {
+      var counter = $('input').attr('value');
+      $('input').attr('value', ++counter);
+    });
+  </script>
+</body>
+
+</html>

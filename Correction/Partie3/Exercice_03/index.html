@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="assets\js\jquery-3.6.1.min.js"></script>
+  <title>Partie3 JQuery Exercice3</title>
+</head>
+
+<body>
+  <input type="number" name="box" value="0" id="form" />
+  <button type="button" name="button">Vérifier</button>
+
+  <script type="text/javascript">
+    function nb_aleatoire(min, max) {
+      var nb = min + (max - min + 1) * Math.random();
+      return Math.floor(nb);
+
+    }
+    var nb = nb_aleatoire(1, 100);
+    var counter = 0;
+    console.log(nb);
+    $('button').click(function() {
+      var nb_user = $('#form').val();
+      console.log(nb_user);
+      if (nb_user > nb) {
+        alert('Trop grand !');
+        ++counter;
+      } else if(nb_user < nb) {
+        alert('Trop petit !');
+        ++counter;
+      }
+      if (nb_user == nb) {
+        ++counter;
+        alert('Vous avez gagnez en ' + counter + ' coups !');
+      }
+    });
+  </script>
+</body>
+
+</html>
